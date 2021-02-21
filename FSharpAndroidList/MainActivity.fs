@@ -65,6 +65,9 @@ type MainActivity () =
      // Get our button from the layout resource, and attach an event to it
      let adapter = new ArrayAdapter(this.BaseContext, Resources.Layout.list_item, countyList)
      this.ListAdapter <- adapter
-     //this.ListView.ItemClick.Add()
+     this.ListView.ItemClick.Add(fun (args : AdapterView.ItemClickEventArgs) ->
+            let myView = args.View :?> TextView 
+            Toast.MakeText(this.BaseContext, myView.Text , ToastLength.Long).Show()
+     )
 
 

@@ -19,7 +19,7 @@
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
     <Name>FSharpAndroidList</Name>
-    <SelectedDevice>pixel_3a_q_10_0_-_api_29</SelectedDevice>
+    <SelectedDevice>Google Pixel 4a (5G)</SelectedDevice>
     <DefaultDevice>pixel_3a_q_10_0_-_api_29</DefaultDevice>
     <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
   </PropertyGroup>
@@ -35,6 +35,11 @@
     <Tailcalls>False</Tailcalls>
     <PlatformTarget>
     </PlatformTarget>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+    <BundleAssemblies>false</BundleAssemblies>
+    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>PdbOnly</DebugType>
